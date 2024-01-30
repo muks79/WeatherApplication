@@ -19,7 +19,7 @@ Installation
     Navigate to the project directory: cd WeatherApplication
     Install dependencies: npm install 
     Start the server: node ./app.js
-    Open your browser and visit: http://localhost:3333
+    Open your browser and visit: http://localhost:3232
 
 Feel the magic in the air! ✨
 
