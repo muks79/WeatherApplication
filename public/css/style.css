@@ -1,0 +1,26 @@
+body{
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(62,55,54,1) 100%);
+}
+
+.container{
+  max-width: 500px;
+  max-height: 500px;
+  background-color: rgb(51, 54, 54);
+  margin: auto;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 42px;
+
+}
+
+.div-heading{
+  font-size: 48px;
+  text-align: center;
+}
+
+
+
