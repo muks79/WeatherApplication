@@ -11,7 +11,7 @@ const forcastt = (lat, long, callback) => {
     } else {
       // callback(undefined, response.body.currentConditions.temp);
       callback(undefined, response.body.currentConditions);
-      console.log(response.body.currentConditions)
+      
     }
   });
 };
