@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.post("/weather", (req, res) => {
+app.get("/weather", (req, res) => {
   const location = req.body.location;
 
   if (!location) {
