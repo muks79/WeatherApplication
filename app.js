@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/weather", (req, res) => {
+app.post("/weather", (req, res) => {
   const location = req.body.location;
 
   if (!location) {
@@ -67,4 +67,4 @@ app.get("/json", (req, res) => {
   res.writeHead(200, { "Content-type": "application/json" });
   res.send({ weather: "bad" });
 });
-app.listen(3232);
+app.listen(2343);
