@@ -5,6 +5,8 @@ let hbs = require("hbs");
 const forcast = require("./forcast");
 const bodyParser = require("body-parser");
 const geocode = require("./geocode");
+const port = process.env.PORT || 3343
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //serving html file and deifining path
@@ -67,4 +69,4 @@ app.get("/json", (req, res) => {
   res.writeHead(200, { "Content-type": "application/json" });
   res.send({ weather: "bad" });
 });
-app.listen(2343);
+app.listen(port);
