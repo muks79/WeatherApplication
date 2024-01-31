@@ -15,7 +15,7 @@ Tech Stack
 
 Installation
 
-    Clone the repository: git clone https://github.com/yourusername/weather-wizard.git
+    Clone the repository: git clone https://github.com/muks79/WeatherApplication.git
     Navigate to the project directory: cd WeatherApplication
     Install dependencies: npm install 
     Start the server: node ./app.js
