@@ -5,7 +5,7 @@ let hbs = require("hbs");
 const forcast = require("./forcast");
 const bodyParser = require("body-parser");
 const geocode = require("./geocode");
-const port = process.env.PORT || 3343
+const port = process.env.PORT || 5545
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
