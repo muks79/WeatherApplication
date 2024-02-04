@@ -52,8 +52,9 @@ app.post("/weather", (req, res) => {
         temp: data2.current.temp_c,
         country: data2.location.country,
         region: data2.location.region,
-        name: data2.location.name
-
+        name: data2.location.name,
+        weather:data2.current.condition.text,
+        icon:data2.current.condition.icon
       });
     });
   });

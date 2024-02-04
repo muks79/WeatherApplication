@@ -9,7 +9,8 @@ const forcastt = (lat, long, callback) => {
     } else if (response.body.error) {
       callback("Location does not found");
     } else {
-      console.log(response.body.location.name)
+      console.log(response.body)
+      console.log(response.body.current.condition.icon)
       callback(undefined, response.body);
     }
   });
