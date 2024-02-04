@@ -39,6 +39,7 @@ app.post("/weather", (req, res) => {
   //req.query.address
 
   geocode(location, (err, data) => {
+    console.log(data.latitude,data.longitude)
     forcast(data.latitude, data.longitude, (err2, data2) => {
       // res.send({
       //   Address: req.query.address,
@@ -47,13 +48,12 @@ app.post("/weather", (req, res) => {
       //   temperature: data2,
       // });
       res.render("index", {
-        time: data2.datetime,
-        temp: data2.temp,
-        humidity: data2.humidity,
-        dew: data2.dew,
-        windspeed: data2.windspeed,
-        sunrise: data2.sunrise,
-        sunset: data2.sunset,
+        time: data2.location.localtime,
+        temp: data2.current.temp_c,
+        country: data2.location.country,
+        region: data2.location.region,
+        name: data2.location.name
+
       });
     });
   });
