@@ -130,8 +130,10 @@
       <header>
         <h1>Weather App</h1>
         <div class="search-box">
-          <input type="text" placeholder="Enter city" />
-          <button>Search</button>
+          <form action="./weather" method="post">
+          <input type="text" placeholder="Enter city" name="location" />
+          <button type="submit">Search</button>
+          </form>
         </div>
       </header>
     </header>
