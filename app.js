@@ -22,8 +22,7 @@ hbs.registerPartials(partialsPath);
 //setup static directory to serve
 app.get("/", (req, res) => {
   res.render("index", {
-    title: "Weather App",
-    name: "Mukul",
+    name: "Upper search kro bde bhai",
     copyright: "Copy Right ALL right reserved",
   });
 });
