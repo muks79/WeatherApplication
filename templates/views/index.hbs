@@ -1,196 +1,180 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
     body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
 
-  header {
-    background-color: #3498db;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
+    header {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
 
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-  }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+    }
 
-  .weather-card {
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-  }
+    .weather-card {
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
 
-  .location h2 {
-    margin: 0;
-  }
+    .location h2 {
+      margin: 0;
+    }
 
-  .temperature img {
-    width: 50px;
-  }
+    .temperature img {
+      width: 50px;
+    }
 
-  .description p {
-    margin: 10px 0;
-    color: #666;
-  }
+    .description p {
+      margin:
+        10px 0;
+      color: #666;
+    }
 
-  .forecast {
-    margin-top: 20px;
-  }
+    .forecast {
+      margin-top: 20px;
+    }
 
-  .forecast-day {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ecf0f1;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-  }
+    .forecast-day {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ecf0f1;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius:
+        5px;
+    }
 
-  .forecast-day img {
-    width: 30px;
-  }
-  .search-box {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .forecast-day img {
+      width: 30px;
+    }
 
-  _input[type="text"]{
-    padding: 8px;
-    font-size: 16px;
-  }
-  
-   input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    width: 70%;
-}
-  
+    .search-box {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    input[type="text"] {
+      padding: 8px;
+      font-size: 16px;
+    }
 
-  button_real {
-    padding: 8px 12px;
-    font-size: 16px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 5px; 
-  }
-  button{
-     padding: 10px 15px;
-    font-size: 16px;
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 0 5px 5px 0;
-    width: 30%;
-  }
+    button {
+      padding: 8px 12px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border:
+        none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
 
-  button:hover {
-    background-color: #2980b9;
-  }
+    button:hover {
+      background-color: #2980b9;
+    }
 
-@keyframes fadeIn {
-from {
-    opacity: 0;
-    transform: translateY(-20px);
-}
-to {
-    opacity: 1;
-    transform: translateY(0);
-}
-}
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
 
-.weather-card,
-.forecast-day {
-animation: fadeIn 0.8s ease-out;
-}
+      to {
+        opacity: 1;
+        transform:
+          translateY(0);
+      }
+    }
 
+    .weather-card,
+    .forecast-day {
+      animation: fadeIn 0.8s ease-out;
+    }
 
-@keyframes slideIn {
-from {
-    opacity: 0;
-    transform: translateY(-20px);
-}
-to {
-    opacity: 1;
-    transform: translateY(0);
-}
-}
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform:
+          translateY(-20px);
+      }
 
-.search-box {
-animation: slideIn 0.8s ease-out;
-}
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-    </style>
-  </head>
+    .search-box {
+      animation: slideIn 0.8s ease-out;
+    }
+  </style>
+</head>
 
-  <body>
+<body>
+  <header>
     <header>
-      <header>
-        <h1>Weather App</h1>
-        <div class="search-box">
-          <form action="./weather" method="post">
+      <h1>Weather App</h1>
+      <div class="search-box">
+        <form action="./weather" method="post">
           <input type="text" placeholder="Enter city" name="location" />
           <button type="submit">Search</button>
-          </form>
-        </div>
-      </header>
+        </form>
+      </div>
     </header>
+  </header>
 
-    <main>
-      <div class="weather-card">
-        <div class="location">
-          <h2>{{name}}, {{country}}</h2>
-          <p>{{time}}</p>
-        </div>
-        <div class="temperature">
-          <img src="{{icon}}" alt="Weather Icon" />
-          <h1>{{temp}}°C</h1>
-        </div>
-        <div class="description">
-          <p>{{weather}}</p>
-        </div>
+  <main>
+    <div class="weather-card">
+      <div class="location">
+        <h2>{{name}}, {{country}}</h2>
+        <p>{{time}}</p>
       </div>
+      <div class="temperature">
+        <img src="{{icon}}" alt="Weather Icon" />
+        <h1>{{temp}}°C</h1>
+      </div>
+      <div class="description">
+        <p>{{weather}}</p>
+      </div>
+    </div>
 
-      <div class="forecast">
-        <h2>7-Day Forecast</h2>
-        <div class="forecast-day">
-          <p>Day 1</p>
-          <img src="sun-icon.png" alt="Weather Icon" />
-          <p>28°C</p>
-        </div>
-        <div class="forecast-day">
-          <p>Day 2</p>
-          <img src="cloud-icon.png" alt="Weather Icon" />
-          <p>22°C</p>
-        </div>
-        <!-- Repeat for other days -->
+    <div class="forecast">
+      <h2>7-Day Forecast</h2>
+      <div class="forecast-day">
+        <p>Day 1</p>
+        <img src="sun-icon.png" alt="Weather Icon" />
+        <p>28°C</p>
       </div>
-    </main>
-  </body>
-  <script src="./../../public/js/script.js"></script>
+      <div class="forecast-day">
+        <p>Day 2</p>
+        <img src="cloud-icon.png" alt="Weather Icon" />
+        <p>22°C</p>
+      </div>
+      <!-- Repeat for other days -->
+    </div>
+  </main>
+</body>
+<script src="./../../public/js/script.js"></script>
+
 </html>
-
-
-     
