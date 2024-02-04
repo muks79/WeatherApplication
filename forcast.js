@@ -15,3 +15,6 @@ const forcastt = (lat, long, callback) => {
   });
 };
 module.exports = forcastt;
+
+
+// 5XVRJJFFYU9Q9ZBD8CJMQWCFP -- api for visualcrossing

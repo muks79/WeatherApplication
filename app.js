@@ -23,7 +23,6 @@ hbs.registerPartials(partialsPath);
 app.get("/", (req, res) => {
   res.render("index", {
     name: "Upper search kro bde bhai",
-    copyright: "Copy Right ALL right reserved",
   });
 });
 
@@ -40,12 +39,6 @@ app.post("/weather", (req, res) => {
   geocode(location, (err, data) => {
     console.log(data.latitude,data.longitude)
     forcast(data.latitude, data.longitude, (err2, data2) => {
-      // res.send({
-      //   Address: req.query.address,
-      //   latitude: data.latitude,
-      //   longitude: data.longitude,
-      //   temperature: data2,
-      // });
       res.render("index", {
         time: data2.location.localtime,
         temp: data2.current.temp_c,
