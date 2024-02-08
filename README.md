@@ -1,10 +1,10 @@
-🌦️ Weather Wizard
+🌦️ Weather Wizard()
 
 A magical weather app powered by Node.js, Express.js, and Handlebars 🚀
 Features
 
     Real-time Weather Updates: Stay informed with up-to-the-minute weather forecasts.
-    Intuitive UI: A sleek and user-friendly interface for effortless navigation.
+    Intuitive UI: A sleek and user-friendly interface.
     Location-based Forecast: Get weather details for your current location or any city in the world.
 
 Tech Stack
